@@ -1,0 +1,11 @@
+package stackTest;
+
+public class StackTest {
+	//Heaps store references of objects in memory.
+	//Stacks only allow removal of objects in the order they were added.
+	public static void main(String[] args) {
+	int a = 1;
+	int b = 1;
+	System.out.println(a==b);
+	}
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;phoneNumberGenerator&apos;" deleteContents="false" description="Delete resource &apos;phoneNumberGenerator&apos;" element1="/phoneNumberGenerator" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1636388290706"/>&#x0A;<refactoring comment="Delete resource &apos;sphereSurfaceAreaAndVolume&apos;" deleteContents="false" description="Delete resource &apos;sphereSurfaceAreaAndVolume&apos;" element1="/sphereSurfaceAreaAndVolume" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1636388422766"/>
+</session>

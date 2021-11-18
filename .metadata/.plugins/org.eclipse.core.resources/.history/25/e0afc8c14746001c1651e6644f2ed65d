@@ -1,0 +1,42 @@
+package hangman;
+import java.util.Scanner;
+public class Hangman {
+	private final String[] wordArray = {"fireman","chair","cookie","can","wind"};
+	private final String[] hintArray = {"They use water for their job.","Something you spend a lot of time on top of.","A tasty treat commonly used on websites to store user data","Usually made of aluminum or tin","Can destroy trees when it is strong."};
+	public String[] getRandomWord() {
+		int index = (int)Math.random()*5;
+		String[] wrapperClass = {wordArray[index],""+index};
+		return wrapperClass;
+	}
+	public String getHintFromIndex(int ind) {
+		return hintArray[ind];
+	}
+	public void hangmanGame() {
+		Scanner in = new Scanner(System.in);
+		String word = getRandomWord()[0];
+		String blank = "";
+		for (int j = 0; j<word.length();j++) {
+			blank+="_";
+		}
+		int hintindex = Integer.parseInt(getRandomWord()[1]);
+		int counter = 3;
+		while (counter>=1) {
+			System.out.println("Type in a guess (single letter):");
+			String guess = in.nextLine();
+			boolean correct = false;
+			for (int i = 0; i<word.length();i++) {
+				if (guess==String.valueOf(word.charAt(i))) {
+					correct = true;
+				}
+			}
+			if (correct) {
+				System.out.println("You guessed a letter!");
+				blank = blank.substring(0,guess.indexOf());
+			} else {
+				System.out.println("Not correct...");
+				counter--;
+			}
+		}
+		in.close();
+	}
+}

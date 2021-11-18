@@ -1,0 +1,10 @@
+
+public class Circle {
+	private double sideLength;
+	public Circle(double sl) {
+		sl = sideLength;
+	}
+	public double getArea() {
+		return sideLength*sideLength;
+	}
+}

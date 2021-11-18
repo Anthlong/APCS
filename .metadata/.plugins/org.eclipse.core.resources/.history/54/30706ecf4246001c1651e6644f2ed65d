@@ -1,0 +1,6 @@
+package hangman;
+
+public class Hangman {
+	private final String[] wordArray = {"fireman","chair","cookie","can","wind"};
+	private final String[] hintArray = {"They use water for their job.","Something you spend a lot of time on top of.","A tasty treat commonly used on websites to store user data","Usually made of aluminum or tin","Can destroy trees when it is strong."};
+}

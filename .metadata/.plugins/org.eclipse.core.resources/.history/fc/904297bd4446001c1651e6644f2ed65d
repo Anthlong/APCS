@@ -1,0 +1,15 @@
+package hangman;
+import java.util.Scanner;
+public class Hangman {
+	private final String[] wordArray = {"fireman","chair","cookie","can","wind"};
+	private final String[] hintArray = {"They use water for their job.","Something you spend a lot of time on top of.","A tasty treat commonly used on websites to store user data","Usually made of aluminum or tin","Can destroy trees when it is strong."};
+	public String[] getRandomWord() {
+		int index = (int)Math.random()*5;
+		String[] wrapperClass = {wordArray[index],""+index};
+		return wrapperClass;
+	}
+	public String getHintFromIndex(int ind) {
+		return hintArray[ind];
+	}
+	public 
+}
