@@ -1,7 +1,0 @@
-package coin;
-
-public class Coin {
-	public void flip() {
-		
-	}
-}
